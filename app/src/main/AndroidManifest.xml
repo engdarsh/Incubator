@@ -19,7 +19,9 @@
         <activity android:name=".VerifyCode" />
         <activity android:name=".IncubatorsTable" />
         <activity android:name=".SelectedIncubator" />
-        <activity android:name=".ViewDetails"></activity>
+        <activity android:name=".ViewDetails" />
+        <activity android:name=".UsersIncubators" />
+        <activity android:name=".UserSelectedInc"></activity>
     </application>
 
 </manifest>

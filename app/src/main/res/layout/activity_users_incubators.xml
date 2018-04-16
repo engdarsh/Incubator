@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".IncubatorsTable">
+    tools:context=".UsersIncubators">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -24,7 +23,8 @@
                 android:padding="50dp"
                 android:text="Incubator1"
                 android:textColor="#fff"
-                android:textSize="40dp" />
+                android:textSize="40dp"
+                android:textStyle="italic" />
 
             <TextView
                 android:id="@+id/incubator2"
@@ -34,7 +34,8 @@
                 android:padding="50dp"
                 android:text="Incubator2"
                 android:textColor="#fff"
-                android:textSize="40dp" />
+                android:textSize="40dp"
+                android:textStyle="italic" />
 
             <TextView
                 android:id="@+id/incubator3"
@@ -44,7 +45,8 @@
                 android:padding="50dp"
                 android:text="Incubator3"
                 android:textColor="#fff"
-                android:textSize="40dp" />
+                android:textSize="40dp"
+                android:textStyle="italic" />
 
             <TextView
                 android:id="@+id/incubator4"
@@ -54,7 +56,8 @@
                 android:padding="50dp"
                 android:text="Incubator4"
                 android:textColor="#fff"
-                android:textSize="40dp" />
+                android:textSize="40dp"
+                android:textStyle="italic" />
 
         </LinearLayout>
     </ScrollView>

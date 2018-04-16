@@ -12,7 +12,7 @@ import org.w3c.dom.Text;
 
 public class MainActivity extends AppCompatActivity {
 
-    //String Adminpass = "1234", Enduser = "12345";
+    String Adminpass = "1234", Enduser = "12345";
     Button Confirm;
     EditText MobileNumber;
 
@@ -27,28 +27,27 @@ public class MainActivity extends AppCompatActivity {
         Confirm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, VerifyCode.class);
-                startActivity(intent);
-                //check(MobileNumber.getText().toString());
+                check(MobileNumber.getText().toString());
             }
         });
     }
 
-//    public void check(String numVerify) {
+    public void check(String numVerify) {
 //        if (numVerify.isEmpty()) {
 //            Toast.makeText(this, "Please Insert your Num", Toast.LENGTH_SHORT).show();
-//        } else if (numVerify.equals(Adminpass)) {
-//
-//            Toast.makeText(this, "Welcome Admin", Toast.LENGTH_SHORT).show();
-//            Intent intent = new Intent(MainActivity.this, IncubatorsTable.class);
-//            startActivity(intent);
-//
-//        } else if (numVerify.equals(Enduser)) {
-//            Toast.makeText(this, "Welcome Enduser", Toast.LENGTH_SHORT).show();
-//            Intent intent = new Intent(MainActivity.this, IncubatorsTable.class);
-//            startActivity(intent);
-//        } else {
-//            Toast.makeText(this, "You can't login", Toast.LENGTH_SHORT).show();
 //        }
-//    }
+
+        if (numVerify.equals(Adminpass)) {
+            Toast.makeText(this, "Welcome Admin", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(MainActivity.this, IncubatorsTable.class);
+            startActivity(intent);
+
+        } else if (numVerify.equals(Enduser)) {
+            Toast.makeText(this, "Welcome Sir", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(MainActivity.this, UsersIncubators.class);
+            startActivity(intent);
+        } else {
+            Toast.makeText(this, "You can't login", Toast.LENGTH_SHORT).show();
+        }
+    }
 }

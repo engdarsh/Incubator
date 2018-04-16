@@ -7,7 +7,7 @@
     android:background="#455A64"
     android:orientation="vertical"
     android:padding="18dp"
-    tools:context=".SelectedIncubator">
+    tools:context=".UserSelectedInc">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -17,12 +17,12 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Inc Numn : "
+            android:text="Inc Num : 1"
             android:textColor="#fff"
             android:textSize="22dp" />
 
-        <EditText
-            android:id="@+id/IncNum_SeleInc"
+        <TextView
+            android:id="@+id/IncNum_UserInc"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="text"
@@ -42,13 +42,14 @@
             android:textColor="#fff"
             android:textSize="22dp" />
 
-        <EditText
-            android:id="@+id/ChildNam_SeleInc"
+        <TextView
+            android:id="@+id/ChildNum_UserInc"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="text"
             android:textColor="#fff" />
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -58,12 +59,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingTop="12dp"
-            android:text="Date: "
+            android:text="Date : "
             android:textColor="#fff"
             android:textSize="22dp" />
 
-        <EditText
-            android:id="@+id/Date_SeleInc"
+        <TextView
+            android:id="@+id/Date_UserInc"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="text"
@@ -84,8 +85,8 @@
             android:textColor="#fff"
             android:textSize="22dp" />
 
-        <EditText
-            android:id="@+id/Weight_SeleInc"
+        <TextView
+            android:id="@+id/Weight_UserInc"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="text"
@@ -105,8 +106,8 @@
             android:textColor="#fff"
             android:textSize="22dp" />
 
-        <EditText
-            android:id="@+id/Gender_SeleInc"
+        <TextView
+            android:id="@+id/Gender_UserInc"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="text"
@@ -126,8 +127,8 @@
             android:textColor="#fff"
             android:textSize="22dp" />
 
-        <EditText
-            android:id="@+id/IdNum_SeleInc"
+        <TextView
+            android:id="@+id/IdNum_UserInc"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="text"
@@ -148,7 +149,7 @@
             android:textSize="20dp" />
 
         <TextView
-            android:id="@+id/BodyTem_SeleInc"
+            android:id="@+id/BodyTem_UserInc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingRight="50dp"
@@ -165,7 +166,7 @@
             android:textSize="20dp" />
 
         <TextView
-            android:id="@+id/HeartRate_SelInc"
+            android:id="@+id/HeartRate_UserInc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="0"
@@ -189,7 +190,7 @@
             android:textSize="20dp" />
 
         <TextView
-            android:id="@+id/Humidity_SeleInc"
+            android:id="@+id/Humidity_UserInc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingRight="50dp"
@@ -206,7 +207,7 @@
             android:textSize="20dp" />
 
         <TextView
-            android:id="@+id/Temp_SeleInc"
+            android:id="@+id/Temp_UserInc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="0"
@@ -216,11 +217,10 @@
 
     </LinearLayout>
 
-<Button
-    android:id="@+id/ViewDetail"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="show details"
-    android:layout_gravity="bottom" />
+    <Button
+        android:id="@+id/ViewDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="show details" />
 
 </LinearLayout>
