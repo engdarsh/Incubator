@@ -42,12 +42,14 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(MainActivity.this, IncubatorsTable.class);
             startActivity(intent);
 
-        } else if (numVerify.equals(Enduser)) {
+        } else  {
             Toast.makeText(this, "Welcome Sir", Toast.LENGTH_SHORT).show();
             Intent intent = new Intent(MainActivity.this, UsersIncubators.class);
             startActivity(intent);
-        } else {
-            Toast.makeText(this, "You can't login", Toast.LENGTH_SHORT).show();
         }
+
+//        else {
+//            Toast.makeText(this, "You can't login", Toast.LENGTH_SHORT).show();
+//        }
     }
 }

@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     android:background="#455A64"
     android:orientation="vertical"
-    android:padding="18dp"
+    android:paddingTop="18dp"
+    android:paddingLeft="18dp"
     tools:context=".SelectedIncubator">
 
     <LinearLayout
@@ -143,7 +144,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="36dp"
-            android:text="Body Temb = "
+            android:text="BodyTemb = "
             android:textColor="#fff"
             android:textSize="20dp" />
 
@@ -177,7 +178,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingTop="50dp"
+        android:paddingTop="20dp"
         android:textColor="#fff">
 
         <TextView
@@ -200,7 +201,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingLeft="40dp"
+            android:paddingLeft="30dp"
             android:text="Temp = "
             android:textColor="#fff"
             android:textSize="20dp" />
